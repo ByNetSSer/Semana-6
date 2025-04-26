@@ -7,6 +7,10 @@ public class Movement : MonoBehaviour
     [SerializeField] float Horizontal;
     [SerializeField] float velocidad;
     [SerializeField] Rigidbody Rdy;
+    [SerializeField] AudioPlayer audio;
+    [SerializeField] AudioData Clip;
+    [SerializeField] AudioSettings canal;
+    [SerializeField] AudioSource sonido;
     private void Awake()
     {
         Rdy = GetComponent<Rigidbody>();
@@ -19,7 +23,33 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+    }
+    private void OnCollisionStay(Collision collision)
+    {
+
+        if (Horizontal != 0 || Vertical != 0)
+        {
+            if (!sonido.isPlaying)
+            {
+                audio.PlayPlayer(canal.AudioMixerGroup, Clip.AudioClip);
+            }
+
+        }
+        else
+        {
+            if (sonido.isPlaying)
+            {
+                audio.PlayPlayer(canal.AudioMixerGroup, null);
+            }
+
+        }
+    }
+    private void OnCollisionExit(Collision collision)
+    {
+        if (sonido.isPlaying)
+        {
+            audio.PlayPlayer(canal.AudioMixerGroup, null);
+        }
     }
     private void FixedUpdate()
     {

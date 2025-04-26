@@ -6,22 +6,25 @@ public class InteractableObject : MonoBehaviour
     [SerializeField] AudioData audioData;
     [SerializeField] AudioSettings audioSettings;
     public static event Action<AudioMixerGroup, AudioClip> OncollisionMusic;
-    private void OnTriggerEnter(Collider collider)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (collider.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            OncollisionMusic?.Invoke(audioSettings.AudioMixerGroup,audioData.AudioClip);
+            Debug.Log("colicione");
+                
+            OncollisionMusic?.Invoke(audioSettings.AudioMixerGroup, audioData.AudioClip);
         }
     }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+   private void invoke(AudioMixerGroup currentGroup, AudioClip currentAudioClip)
     {
-        
+        Debug.Log("invocado");
     }
-
-    // Update is called once per frame
-    void Update()
+    private void OnEnable()
     {
-        
+        OncollisionMusic += invoke;
+    }
+    private void OnDisable()
+    {
+        OncollisionMusic += invoke;
     }
 }

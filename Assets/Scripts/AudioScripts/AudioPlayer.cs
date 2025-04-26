@@ -1,18 +1,28 @@
 using UnityEngine;
-
+using UnityEngine.Audio;
 public class AudioPlayer : MonoBehaviour
 {
     [SerializeField] ChannelPlayer musicPlayer;
     [SerializeField] ChannelPlayer sfxPlayer;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void OnEnable()
     {
-        
-    }
+        InteractableObject.OncollisionMusic += PlayPlayer;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
+    private void OnDisable()
+    {
+        InteractableObject.OncollisionMusic -= PlayPlayer;
+    }
+    public void PlayPlayer(AudioMixerGroup currentGroup,AudioClip currentAudioClip)
+    {
+        if (currentGroup == musicPlayer.PlayerChannel)
+        {
+            musicPlayer.PlayerClip(currentAudioClip);
+        }
+        else
+        {
+            sfxPlayer.PlayerClip(currentAudioClip);
+        }
+    }
+    
 }

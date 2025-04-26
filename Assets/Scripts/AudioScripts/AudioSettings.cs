@@ -18,8 +18,8 @@ public class AudioSettings : ScriptableObject
 
     private void OnEnable()
     {
-        PlayerPrefs.SetFloat(audioKeySafe,1f);
-        UpdateVolume(PlayerPrefs.GetFloat(audioKeySafe, 1f));
+        //PlayerPrefs.SetFloat(audioKeySafe,1f);
+        UpdateVolume(PlayerPrefs.GetFloat(audioKeySafe, 0.5f));
     }
 
     private void OnDisable()
