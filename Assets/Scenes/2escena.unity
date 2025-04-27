@@ -604,6 +604,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioData: {fileID: 11400000, guid: ee340f767dc312b46a016449dc8a61b6, type: 2}
   audioSettings: {fileID: 11400000, guid: ad3bbf643b48fc94fa0faee369963685, type: 2}
+  Restriccion: {fileID: 11400000, guid: ad3bbf643b48fc94fa0faee369963685, type: 2}
 --- !u!114 &510136351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -617,7 +618,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioData: {fileID: 11400000, guid: 569237b23b4fc1a4db3880c0f5121c4c, type: 2}
-  audioSettings: {fileID: 11400000, guid: 3a787658330850e4d8f553f8a2d64e3d, type: 2}
+  audioSettings: {fileID: 11400000, guid: d73b8c8b7f4ea384788136c9f8c47537, type: 2}
+  Restriccion: {fileID: 11400000, guid: ad3bbf643b48fc94fa0faee369963685, type: 2}
 --- !u!1 &634371335
 GameObject:
   m_ObjectHideFlags: 0
@@ -1800,7 +1802,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0.40170804, y: 0, z: 0, w: 0.9157678}
-  m_LocalPosition: {x: 0, y: 12.530001, z: -10}
+  m_LocalPosition: {x: 0, y: 10.26, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2134,6 +2136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioData: {fileID: 11400000, guid: 077eabe3ca3226940b6115ced55ebca3, type: 2}
   audioSettings: {fileID: 11400000, guid: ad3bbf643b48fc94fa0faee369963685, type: 2}
+  Restriccion: {fileID: 11400000, guid: ad3bbf643b48fc94fa0faee369963685, type: 2}
 --- !u!114 &1003152241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2147,7 +2150,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioData: {fileID: 11400000, guid: 569237b23b4fc1a4db3880c0f5121c4c, type: 2}
-  audioSettings: {fileID: 11400000, guid: 3a787658330850e4d8f553f8a2d64e3d, type: 2}
+  audioSettings: {fileID: 11400000, guid: d73b8c8b7f4ea384788136c9f8c47537, type: 2}
+  Restriccion: {fileID: 11400000, guid: ad3bbf643b48fc94fa0faee369963685, type: 2}
 --- !u!1 &1014538629
 GameObject:
   m_ObjectHideFlags: 0
@@ -2509,7 +2513,7 @@ Transform:
   m_GameObject: {fileID: 1026096609}
   serializedVersion: 2
   m_LocalRotation: {x: 0.40170804, y: 0, z: 0, w: 0.9157678}
-  m_LocalPosition: {x: 0, y: 12.530001, z: -10}
+  m_LocalPosition: {x: 0, y: 10.26, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2819,6 +2823,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioData: {fileID: 11400000, guid: 36808a785c11a084caccd70e7318ebe9, type: 2}
   audioSettings: {fileID: 11400000, guid: ad3bbf643b48fc94fa0faee369963685, type: 2}
+  Restriccion: {fileID: 11400000, guid: ad3bbf643b48fc94fa0faee369963685, type: 2}
 --- !u!114 &1188244649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2832,7 +2837,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioData: {fileID: 11400000, guid: 569237b23b4fc1a4db3880c0f5121c4c, type: 2}
-  audioSettings: {fileID: 11400000, guid: 3a787658330850e4d8f553f8a2d64e3d, type: 2}
+  audioSettings: {fileID: 11400000, guid: d73b8c8b7f4ea384788136c9f8c47537, type: 2}
+  Restriccion: {fileID: 11400000, guid: ad3bbf643b48fc94fa0faee369963685, type: 2}
 --- !u!1 &1282052607
 GameObject:
   m_ObjectHideFlags: 0
@@ -2955,7 +2961,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioData: {fileID: 11400000, guid: 4633ec46936210941b6106bcb73d0680, type: 2}
-  audioSettings: {fileID: 11400000, guid: 3a787658330850e4d8f553f8a2d64e3d, type: 2}
+  audioSettings: {fileID: 11400000, guid: d73b8c8b7f4ea384788136c9f8c47537, type: 2}
+  Restriccion: {fileID: 11400000, guid: ad3bbf643b48fc94fa0faee369963685, type: 2}
 --- !u!1 &1293969916
 GameObject:
   m_ObjectHideFlags: 0
@@ -3593,7 +3600,7 @@ Transform:
   m_GameObject: {fileID: 1569521611}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.43, z: 0}
+  m_LocalPosition: {x: 0, y: 2.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4083,6 +4090,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioData: {fileID: 11400000, guid: a0061b3ae9181444abe46316681beb0c, type: 2}
   audioSettings: {fileID: 11400000, guid: ad3bbf643b48fc94fa0faee369963685, type: 2}
+  Restriccion: {fileID: 11400000, guid: ad3bbf643b48fc94fa0faee369963685, type: 2}
 --- !u!114 &1683243368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4096,7 +4104,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioData: {fileID: 11400000, guid: 569237b23b4fc1a4db3880c0f5121c4c, type: 2}
-  audioSettings: {fileID: 11400000, guid: 3a787658330850e4d8f553f8a2d64e3d, type: 2}
+  audioSettings: {fileID: 11400000, guid: d73b8c8b7f4ea384788136c9f8c47537, type: 2}
+  Restriccion: {fileID: 11400000, guid: ad3bbf643b48fc94fa0faee369963685, type: 2}
 --- !u!1 &1805915471
 GameObject:
   m_ObjectHideFlags: 0

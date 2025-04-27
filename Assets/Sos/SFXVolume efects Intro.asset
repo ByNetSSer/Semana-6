@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d2274fc3f1059d642a63cef27fa2500a, type: 3}
-  m_Name: MusicVolume
+  m_Name: SFXVolume efects Intro
   m_EditorClassIdentifier: 
   audioMixer: {fileID: 24100000, guid: 1bd5cb616feb74b4893c7cbe0a51cdaa, type: 2}
-  audioMixerGroup: {fileID: -4304586380326965582, guid: 1bd5cb616feb74b4893c7cbe0a51cdaa, type: 2}
-  audioMixerKey: MusicVolume
-  audioKeySafe: MusicVolume
-  volumeScaled: 1
-  volumeDBs: 0
+  audioMixerGroup: {fileID: 951140114923659830, guid: 1bd5cb616feb74b4893c7cbe0a51cdaa, type: 2}
+  audioMixerKey: SFXVolume
+  audioKeySafe: SFXVolume
+  volumeScaled: 0.25100884
+  volumeDBs: -12.00622
   isMuted: 0

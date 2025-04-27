@@ -8,9 +8,11 @@ public class Movement : MonoBehaviour
     [SerializeField] float velocidad;
     [SerializeField] Rigidbody Rdy;
     [SerializeField] AudioPlayer audio;
+   // [SerializeField] AudioPlayer audio2;
     [SerializeField] AudioData Clip;
-    [SerializeField] AudioData ClipIntro;
+    //[SerializeField] AudioData ClipIntro;
     [SerializeField] AudioSettings canal;
+    //[SerializeField] AudioSettings canal2;
     [SerializeField] AudioSource sonido;
     private void Awake()
     {
@@ -18,12 +20,16 @@ public class Movement : MonoBehaviour
     }
     void Start()
     {
-        audio.PlayPlayer(canal.AudioMixerGroup, ClipIntro.AudioClip);
+        //audio2.PlayPlayer(canal2.AudioMixerGroup, ClipIntro.AudioClip);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (transform.position.y <0)
+        {
+            transform.position = new Vector3(0, 2.16f,0);
+        }   
     }
     private void OnCollisionStay(Collision collision)
     {

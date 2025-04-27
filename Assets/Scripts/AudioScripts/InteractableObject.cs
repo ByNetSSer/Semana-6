@@ -5,8 +5,8 @@ public class InteractableObject : MonoBehaviour
 {
     [SerializeField] AudioData audioData;
     [SerializeField] AudioSettings audioSettings;
-    
 
+    [SerializeField] AudioSettings Restriccion;
     public static event Action<AudioMixerGroup, AudioClip> OncollisionMusic;
     private void OnCollisionEnter(Collision collision)
     {
@@ -17,7 +17,16 @@ public class InteractableObject : MonoBehaviour
             OncollisionMusic?.Invoke(audioSettings.AudioMixerGroup, audioData.AudioClip);
         }
     }
-   private void invoke(AudioMixerGroup currentGroup, AudioClip currentAudioClip)
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player") && audioSettings ==Restriccion )
+        {
+            Debug.Log("me fui");
+
+            OncollisionMusic?.Invoke(audioSettings.AudioMixerGroup, null);
+        }
+    }
+    private void invoke(AudioMixerGroup currentGroup, AudioClip currentAudioClip)
     {
         Debug.Log("invocado");
     }
