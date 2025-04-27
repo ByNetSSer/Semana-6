@@ -5,6 +5,8 @@ public class InteractableObject : MonoBehaviour
 {
     [SerializeField] AudioData audioData;
     [SerializeField] AudioSettings audioSettings;
+    
+
     public static event Action<AudioMixerGroup, AudioClip> OncollisionMusic;
     private void OnCollisionEnter(Collision collision)
     {

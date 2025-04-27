@@ -9,6 +9,7 @@ public class Movement : MonoBehaviour
     [SerializeField] Rigidbody Rdy;
     [SerializeField] AudioPlayer audio;
     [SerializeField] AudioData Clip;
+    [SerializeField] AudioData ClipIntro;
     [SerializeField] AudioSettings canal;
     [SerializeField] AudioSource sonido;
     private void Awake()
@@ -17,7 +18,7 @@ public class Movement : MonoBehaviour
     }
     void Start()
     {
-        
+        audio.PlayPlayer(canal.AudioMixerGroup, ClipIntro.AudioClip);
     }
 
     // Update is called once per frame
