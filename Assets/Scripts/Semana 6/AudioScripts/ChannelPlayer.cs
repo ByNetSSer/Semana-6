@@ -11,7 +11,7 @@ public class ChannelPlayer : MonoBehaviour
     }
     public void PlayerClip(AudioClip cliptoplay)
     {
-        Debug.Log("recibi");
+
         audioSource.Stop();
         audioSource.clip = cliptoplay;
         audioSource.Play();

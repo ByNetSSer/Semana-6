@@ -18,7 +18,7 @@ public class ChangeScene : MonoBehaviour
     {
         if (collision.gameObject.tag =="Player")
         {
-            SceneManager.LoadScene(Escena);
+            SceneManager.LoadScene  (Escena);
         }
     }
 }
