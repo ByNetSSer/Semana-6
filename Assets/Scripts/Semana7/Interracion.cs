@@ -22,7 +22,7 @@ public class Interracion : MonoBehaviour
 
     public void InteractiveAccion(InputAction.CallbackContext context)
     {
-        if (context.phase != InputActionPhase.Performed) return;
+        if (context.phase != InputActionPhase.Started) return;
         if (NPC != null)
         {
             NPC.Talk();

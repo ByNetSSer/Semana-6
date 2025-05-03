@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59af05c5b96750c4f8c47ef1ce7b3c8f, type: 3}
   m_Name: 1NPC
   m_EditorClassIdentifier: 
-  Text: 
-  Time: 0
+  Perfil: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  Text: Hola mundo
+  Name: Sorio
+  Time: 3
